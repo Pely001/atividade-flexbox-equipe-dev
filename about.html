@@ -5,26 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre o Projeto</title>
   <link rel="stylesheet" href="style.css">
+  
+  <style>
+    pre {
+      background-color: #111; /* Cor de fundo do seu body */
+      border: 1px solid var(--cor-terciaria);
+      color: var(--cor-secundaria);
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    pre code {
+      background-color: transparent;
+      font-family: "Courier New", Courier, monospace;
+    }
+    /* Fazendo as listas usarem a classe do seu CSS */
+    .about ul, .about ol {
+      /* Aplicando o estilo da sua classe .lista-funcionalidades */
+      list-style-type: disc; 
+      text-align: left;
+      padding-left: 40px; /* Adiciona um recuo padrão */
+      margin-bottom: 20px;
+    }
+    .about li {
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
 <body>
   <header class="cabecalho">
     <nav class="menu">
       <a href="index.html" class="menu__link">Home</a>
-      <a href="about.html" class="menu__link ativo">Sobre</a>
-    </nav>
+      <a href="about.html" class="menu__link ativo">Sobre</a> </nav>
   </header>
 
   <main class="container about">
-    <h1 class="titulo-pagina">Sobre o Projeto</h1>
+    <h1 class="titulo-pagina">Chama Senha 🎟️</h1>
 
-    <p>Este projeto foi desenvolvido como prática de Flexbox, variáveis CSS e responsividade,
-      integrando os conhecimentos de Desenvolvimento de Software e Ferramentas de TI.</p>
+    <p>Este é um <strong>projeto de estudo</strong> para praticar desenvolvimento web com <strong>Python (Flask)</strong>, utilizando <strong>HTML, CSS e JavaScript</strong> no frontend.</p>
+    <p>A ideia é simular um <strong>sistema de chamada de senhas</strong> para filas de atendimento.</p>
 
-    <p>Os alunos devem personalizar as cores, fontes e imagens, além de criar um repositório no GitHub
-      com suas versões do projeto e publicar o link do repositório.</p>
+    <h2>🚀 Funcionalidades</h2>
+    <ul>
+      <li>Painel de exibição de senhas</li>
+      <li>Tela para o atendente chamar a próxima senha</li>
+      <li>Integração simples entre frontend e backend com Flask</li>
+      <li>Interface web responsiva básica</li>
+    </ul>
 
-    <p><strong>Desafio:</strong> personalize a borda de um dos cards substituindo a cor fixa
-      <code>#888</code> por uma variável de cor definida em <code>:root</code>.</p>
+    <h2>📂 Estrutura do Projeto</h2>
+<div class="file-tree">
+  <ul>
+    <li><span class="folder">📁</span> chama_senha/
+      <ul>
+        <li><span class="file">🐍</span> app.py <span class="comment"># Backend principal (Flask)</span></li>
+        <li><span class="folder">📁</span> static/
+          <ul>
+            <li><span class="file">🎨</span> style.css <span class="comment"># Estilos da interface</span></li>
+            <li><span class="file">⚡</span> script.js <span class="comment"># Funções JS do frontend</span></li>
+          </ul>
+        </li>
+        <li><span class="folder">📁</span> templates/
+          <ul>
+            <li><span class="file">📄</span> painel.html <span class="comment"># Tela do painel de senhas</span></li>
+            <li><span class="file">📄</span> atendimento.html <span class="comment"># Tela de atendimento</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+    <h2>🛠️ Tecnologias Utilizadas</h2>
+    <ul>
+      <li><strong>Python 3 + Flask</strong></li>
+      <li><strong>HTML5, CSS3 e JavaScript</strong></li>
+      <li><strong>Bootstrap (pode ser integrado futuramente)</strong></li>
+    </ul>
+
+    <h2>⚠️ Aviso Importante</h2>
+    <p>🔹 Este é um projeto <strong>experimental</strong> criado apenas para <strong>estudo e prática</strong>.</p>
+    <p>🔹 O código ainda <strong>precisa de melhorias</strong> em:</p>
+    <ul>
+      <li>Organização e boas práticas (separação em módulos, tratamento de erros)</li>
+      <li>Persistência de dados (atualmente sem banco de dados)</li>
+      <li>Design da interface (UI/UX)</li>
+      <li>Segurança (rotas abertas, sem autenticação)</li>
+    </ul>
+
+    <h2>▶️ Como Rodar o Projeto</h2>
+    <ol>
+      <li>
+        <strong>Clone este repositório:</strong>
+        <pre><code>git clone https://github.com/seu-usuario/chama_senha.git
+cd chama_senha</code></pre>
+      </li>
+      <li>
+        <strong>Crie um ambiente virtual e instale as dependências:</strong>
+        <pre><code>python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+pip install flask</code></pre>
+      </li>
+      <li>
+        <strong>Execute o servidor:</strong>
+        <pre><code>python app.py</code></pre>
+      </li>
+      <li>
+        <strong>Abra no navegador:</strong>
+        <pre><code>http://127.0.0.1:5000</code></pre>
+      </li>
+    </ol>
+
+    <h2>📌 Próximos Passos (Sugestões de Melhoria)</h2>
+    <ul>
+      <li>Implementar banco de dados (SQLite ou PostgreSQL) para salvar senhas</li>
+      <li>Criar autenticação para os atendentes</li>
+      <li>Adicionar histórico de senhas chamadas</li>
+      <li>Melhorar o layout usando um framework CSS (Bootstrap ou Tailwind)</li>
+      <li>Deploy em um serviço gratuito (Railway, Fly.io, Render, etc.)</li>
+    </ul>
+
   </main>
 
   <footer class="rodape">
@@ -32,4 +133,3 @@
   </footer>
 </body>
 </html>
-

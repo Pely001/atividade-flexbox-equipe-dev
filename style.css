@@ -3,7 +3,7 @@
 :root {
   --cor-primaria: #111;
   --cor-secundaria: #f6f6f6;
-  --cor-terciaria: #fd2231; /* <- ATIVIDADE ---- trocar A COR */
+  --cor-terciaria: #160447; /* <- ATIVIDADE ---- trocar A COR */
   --cor-hover: #272727;
 }
 
@@ -52,10 +52,6 @@ body {
 
 .menu__link:hover {
   background-color: var(--cor-hover);
-}
-
-.menu__link.ativo {
-  border-bottom: 3px solid var(--cor-secundaria);
 }
 
 /* ---------- TÍTULO PRINCIPAL ---------- */
@@ -154,4 +150,9 @@ button:hover {
   .titulo-pagina {
     font-size: 1.5rem;
   }
+}
+
+.lista-funcionalidades {
+  list-style-type: disc; 
+  text-align: left;
 }
